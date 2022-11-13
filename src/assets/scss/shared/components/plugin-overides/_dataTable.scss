@@ -1,0 +1,77 @@
+div {
+  &.dataTables_wrapper {
+    div {
+      &.dataTables_filter {
+        margin-right: 20px;
+        @media (max-width: 767px) {
+          margin-left: 20px;
+        }
+        label {
+          line-height: 1;
+        }
+        input [type="text"] {
+          &:focus {
+            border: 1px solid $border-color;
+          }
+        }
+        &.mdc-filter {
+          input {
+            height: 40px;
+            border: 1px solid $border-color;
+            padding: 5px 10px;
+          }
+        }
+      }
+      &.dataTables_length {
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 24px;
+        &.mdc-sort-filter {
+          select {
+            height: 45px;
+            border: 1px solid $border-color;
+            padding: 10px 16px;
+            background: transparent;
+          }
+        }
+        @media (max-width: 767px) {
+          text-align: left;
+        }
+      }
+      &.dataTables_paginate {
+        .paginate_button {
+          background: #bababa;
+          color: $white !important; //to override datatable color
+          &:hover {
+            background: theme-color(info);
+            border: 1px solid theme-color(info);
+          }
+          &.current {
+            background: theme-color(primary);
+            color: $white !important; //to override datatable color
+          }
+        }
+      }
+    }
+  }
+}
+
+.dataTables_info {
+  padding: 20px;
+}
+table {
+  &.dataTable {
+    &.no-footer {
+      border-bottom: 1px solid $border-color;
+    }
+    tbody {
+      tr {
+        td .mdc-button {
+          line-height: 4px;
+          font-weight: normal;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

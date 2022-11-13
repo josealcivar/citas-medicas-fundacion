@@ -1,0 +1,64 @@
+
+.faq {
+  .mdc-expansion-panel-link {
+    font-size: 0.9375rem;
+    position: relative;
+    color: inherit;
+    font-weight: normal;
+    display: block;
+    text-decoration: none;
+    padding: 1.25rem;
+    &:before {
+      font-family:"Material Design Icons";
+      content: "\F140";
+      position: absolute;
+      right: 16px;
+      top: 25px;
+      font-size: 20px;
+      display: block;
+      color: #000000;
+    }
+  }
+  .mdc-expansion-panel {
+    display: none;
+    font-size: 14px;
+    padding: 0 2rem 2rem 2rem;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+}
+
+
+.expansion-panel {
+  > .card {
+    overflow: hidden;
+    margin-bottom: 0.625rem;
+    border-radius: .25rem;
+    border: 1px solid $border-color;
+    box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+
+    &:not(:first-of-type) {
+      .card-header:first-child {
+        @include border-radius(0);
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: 0;
+        @include border-radius(0);
+      }
+    }
+
+    &:first-of-type {
+      border-bottom: 0;
+      @include border-bottom-radius(0);
+    }
+
+    &:last-of-type {
+      @include border-top-radius(0);
+    }
+
+    // .card-header {
+    //   margin-bottom: -$card-border-width;
+    // }
+  }
+}

@@ -1,0 +1,42 @@
+/* Pagination */
+
+.mdc-pagination {
+	list-style-type: none;
+	padding-left: 0;
+	li {
+		display: inline-block;
+		a {
+			display: inline-block;
+			min-width: auto;
+			line-height: 1;
+			padding: .5rem .75rem;
+			border: 1px solid $border-color;
+			&.active,
+			&:hover {
+				background: theme-color(primary);
+				color: $white;
+			}
+		}
+
+		
+	}
+	@each $color, $value in $theme-colors {
+		&.mdc-pagination--#{$color} {
+			li {
+				a {
+					@extend .text-button--#{$color};
+					&.active {
+						@extend .filled-button--#{$color};
+					}
+				}
+			}
+		}
+	}
+	&.mdc-pagination--rounded {
+		li {
+			a {
+				border-radius: 50px;
+			}
+		}
+	}
+}
