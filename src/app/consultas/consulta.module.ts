@@ -9,6 +9,9 @@ import { RegisterComponent } from '../auth/register/register.component';
 import { NopagesfoundComponent } from './pages/nopagesfound/nopagesfound.component';
 
 
+import { MaterialModule } from '../material.module';
+
+
 
 @NgModule({
   declarations: [
@@ -19,8 +22,16 @@ import { NopagesfoundComponent } from './pages/nopagesfound/nopagesfound.compone
     RegisterComponent,
     NopagesfoundComponent
   ],
+  exports:[
+
+ 
+   
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+  
+    
   ]
 })
 export class ConsultaModule { }

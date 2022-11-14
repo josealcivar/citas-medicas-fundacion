@@ -9,9 +9,13 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ConsultaModule } from './consultas/consulta.module';
 
-import { PagesMainComponent } from './consultas/pages/pages-main/pages-main.component';
 
+
+import { PagesMainComponent } from './consultas/pages/pages-main/pages-main.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
+
   declarations: [
     AppComponent,
     SidebarComponent,
@@ -21,10 +25,12 @@ import { PagesMainComponent } from './consultas/pages/pages-main/pages-main.comp
     
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     ConsultaModule,
-    AppRoutingModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
