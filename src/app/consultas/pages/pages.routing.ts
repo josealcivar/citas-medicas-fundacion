@@ -6,11 +6,14 @@ import { CitasMedicasComponent } from './citas-medicas/citas-medicas.component';
 
 
 const routes: Routes = [
-    {path:'', component: PagesMainComponent,
-    children:[
-      {path:'dashboard', component: HomeComponent},
-      {path:'citas', component: CitasMedicasComponent},
-      {path:'', redirectTo:'/dashboard', pathMatch:'full'},
+    
+    {
+        path:'dashboard', component: PagesMainComponent,
+    
+      children:[
+        {path:'', component: HomeComponent},
+        {path:'citas', component: CitasMedicasComponent},
+        
     ]},
     
     
