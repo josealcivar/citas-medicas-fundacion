@@ -14,13 +14,13 @@ import { ConsultaModule } from './consultas/consulta.module';
 import { PagesMainComponent } from './consultas/pages/pages-main/pages-main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
+import { AuthModule } from './auth/auth.module';
 @NgModule({
 
   declarations: [
     AppComponent,
-    SidebarComponent,
-    HeaderComponent,
-    FooterComponent,
+  
     PagesMainComponent,
     
   ],
@@ -30,7 +30,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule,
+    AuthModule
     
   ],
   providers: [],

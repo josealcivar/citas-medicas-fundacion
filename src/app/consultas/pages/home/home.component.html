@@ -5,6 +5,7 @@
       <div class="faq-block card-body">
         <div class="container-fluid py-2">
           <h6 class="card-title">Turnos Pacientes</h6>
+          
         </div>
           <div class="card">
             <div class="mdc-layout-grid__inner">
@@ -20,10 +21,11 @@
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
                 <div class="faq-block card-body">
                 <div class="container-fluid py-2">
-                  <h5 class="mb-0">Tipo Busqueda:</h5>
+                  <!-- <h5 class="mb-0">Tipo Busqueda:</h5> -->
+                  <h6 class="card-title">Tipo de Busqueda:</h6>
                 </div>
                 <div class="mdc-form-field">
-                  <div class="mdc-checkbox mdc-checkbox--info">
+                  <div class="mdc-checkbox mdc-checkbox--success">
                     <input type="checkbox"
                             id="basic-disabled-checkbox"
                             class="mdc-checkbox__native-control"
@@ -41,7 +43,7 @@
                   <label for="basic-disabled-checkbox" id="basic-disabled-checkbox-label">Médico Especialista</label>
                 </div>
                 <div class="mdc-form-field">
-                  <div class="mdc-checkbox mdc-checkbox--info">
+                  <div class="mdc-checkbox mdc-checkbox--success">
                     <input type="checkbox"
                             id="basic-disabled-checkbox"
                             class="mdc-checkbox__native-control"
@@ -77,8 +79,9 @@
                   <div class="mdc-notched-outline__trailing"></div>
                 </div>
               </div> 
-              <button class="mdc-button mdc-button--raised ml-3 px-4 height-auto">
-                Search
+              <!-- <button class="mdc-button mdc-button--raised ml-3 px-4 height-auto"> -->
+                <button class="mdc-button mdc-button--unelevated shaped-button filled-button--success">
+                Buscar
               </button>
             </div>
           </div>
@@ -88,6 +91,183 @@
       </div>
     </div>
   </div>
-              
- <app-data-table></app-data-table>  
+              <div class="border-bottom py-1"></div>
+ <!-- <app-data-table></app-data-table>   -->
+
+ <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+  <div class="mdc-card p-0 product-list">
+    <div class="product-list-header">
+      <h4 class="card-title">Lista de Pacientes</h4>
+      <h5 class="card-sub-title">Turnos disponibles de pacientes.</h5>  
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/Slack.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Slack</h5>
+          <p class="mb-0 text-muted">Cloud-based software</p>
+        </div>
+      </div>
+      <div>
+      <!-- <i class="material-icons options-icon">more_vert</i> -->
+      <button class="mdc-button mdc-button--outlined shaped-button outlined-button--info">
+        Ver
+      </button>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+        <!-- <i class="material-icons options-icon">more_vert</i> -->
+        <button class="mdc-button mdc-button--outlined shaped-button outlined-button--info">
+          Ver
+        </button>
+        </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/evernote.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Evernote</h5>
+          <p class="mb-0 text-muted">Downloadable software</p>
+        </div>
+      </div>
+      <div>
+        <!-- <i class="material-icons options-icon">more_vert</i> -->
+        <button class="mdc-button mdc-button--outlined shaped-button outlined-button--info">
+          Ver
+        </button>
+        </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/dropbox.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Dropbox</h5>
+          <p class="mb-0 text-muted">Hosting service </p>
+        </div>
+      </div>
+      <div>
+        <!-- <i class="material-icons options-icon">more_vert</i> -->
+        <button class="mdc-button mdc-button--outlined shaped-button outlined-button--info">
+          Ver
+        </button>
+        </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+    <div class="product-list-item">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/dashboard/skype.png" alt="">
+        <div class="ml-3">
+          <h5 class="font-weight-medium mb-0">Skype</h5>
+          <p class="mb-0 text-muted">Computer application</p>
+        </div>
+      </div>
+      <div>
+      <i class="material-icons options-icon">more_vert</i>
+      </div>
+    </div>
+  </div>
+</div>
 
