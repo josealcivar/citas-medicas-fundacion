@@ -8,6 +8,8 @@ import { NopagesfoundComponent } from './pages/nopagesfound/nopagesfound.compone
 
 import { MaterialModule } from '../material.module';
 import { AuthModule } from '../auth/auth.module';
+import { FormsModule } from '@angular/forms';
+import { CardPacientesComponent } from './components/card-pacientes/card-pacientes.component';
 
 
 
@@ -17,7 +19,8 @@ import { AuthModule } from '../auth/auth.module';
     HomeComponent,
     DataTableComponent,
     
-    NopagesfoundComponent
+    NopagesfoundComponent,
+         CardPacientesComponent
   ],
   exports:[
 
@@ -27,7 +30,7 @@ import { AuthModule } from '../auth/auth.module';
   imports: [
     CommonModule,
     MaterialModule,
-    
+    FormsModule
     
   ]
 })

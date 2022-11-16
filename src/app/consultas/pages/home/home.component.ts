@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import {
   MAT_MOMENT_DATE_FORMATS,
   MomentDateAdapter,
@@ -20,7 +20,33 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  fechaConsulta='';
+  medicoEspecialista: boolean=false;
+  pacientes: boolean=false;
+  busquedaNombres='';
+
   ngOnInit(): void {
+  }
+
+
+  Busqueda(){
+    console.log(this.fechaConsulta);
+    console.log(this.medicoEspecialista);
+    console.log(this.pacientes);
+    console.log(this.busquedaNombres);
+  }
+
+
+  tipoBusqueda(){
+    if(this.medicoEspecialista==true){
+      this.pacientes=false;
+    }
+  }
+
+  tipoBusquedaPacientes(){
+    if (this.pacientes=true){
+      this.medicoEspecialista=false;
+    }
   }
 
 }

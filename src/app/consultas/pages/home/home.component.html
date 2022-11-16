@@ -12,7 +12,7 @@
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
                 <mat-form-field appearance="fill">
                   <mat-label>Fecha consulta:</mat-label>
-                  <input matInput [matDatepicker]="pickerr">
+                  <input matInput [(ngModel)]="fechaConsulta" [matDatepicker]="pickerr">
                   <!-- <mat-hint>DD/MM/YYYY</mat-hint> -->
                   <mat-datepicker-toggle matSuffix [for]="pickerr"></mat-datepicker-toggle>
                   <mat-datepicker #pickerr></mat-datepicker>
@@ -29,6 +29,8 @@
                     <input type="checkbox"
                             id="basic-disabled-checkbox"
                             class="mdc-checkbox__native-control"
+                            [(ngModel)]="medicoEspecialista"
+                            (change)="tipoBusqueda()"
                             checked />
                     <div class="mdc-checkbox__background">
                       <svg class="mdc-checkbox__checkmark"
@@ -47,6 +49,8 @@
                     <input type="checkbox"
                             id="basic-disabled-checkbox"
                             class="mdc-checkbox__native-control"
+                            [(ngModel)]="pacientes"
+                            (change)="tipoBusquedaPacientes()"
                              />
                     <div class="mdc-checkbox__background">
                       <svg class="mdc-checkbox__checkmark"
@@ -70,7 +74,7 @@
    
             <div class="d-flex align-items-stretch">
               <div class="mdc-text-field mdc-text-field--outlined">
-                <input class="mdc-text-field__input" id="text-field-hero-input">
+                <input class="mdc-text-field__input" [(ngModel)]="busquedaNombres"  id="text-field-hero-input">
                 <div class="mdc-notched-outline">
                   <div class="mdc-notched-outline__leading"></div>
                   <div class="mdc-notched-outline__notch">
@@ -80,7 +84,8 @@
                 </div>
               </div> 
               <!-- <button class="mdc-button mdc-button--raised ml-3 px-4 height-auto"> -->
-                <button class="mdc-button mdc-button--unelevated shaped-button filled-button--success">
+                <button class="mdc-button mdc-button--unelevated shaped-button filled-button--success"
+                (click)="Busqueda()">
                 Buscar
               </button>
             </div>
@@ -100,6 +105,9 @@
       <h4 class="card-title">Lista de Pacientes</h4>
       <h5 class="card-sub-title">Turnos disponibles de pacientes.</h5>  
     </div>
+
+    <app-card-pacientes></app-card-pacientes>
+
     <div class="product-list-item">
       <div class="d-flex align-items-center">
         <img src="../assets/images/dashboard/Slack.png" alt="">
